@@ -1,0 +1,68 @@
+.rightBar {
+    display: flex;
+    flex: 1;
+    position: sticky;
+    top: 57px;
+    height: calc(100vh - 57px);
+    overflow: scroll;
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .rightCard {
+        background-color: white;
+        height: 300px;
+        padding: 5px;
+        margin-left: 8px;
+
+        .head {
+            font-size: large;
+            color: rgba(0, 0, 0, 0.285);
+            margin-bottom: 10px;
+        }
+
+        .items {
+            display: flex;
+            margin-bottom: 25px;
+            width: 100%;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+
+            }
+
+            .right {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: flex-end;
+
+                button {
+                    margin-right: 5px;
+                    padding: 6px;
+                }
+
+                .btnfollow {
+                    color: white;
+                    background-color: blue;
+                }
+
+                .btndismiss {
+                    color: white;
+                    background-color: red;
+                }
+            }
+        }
+    }
+}

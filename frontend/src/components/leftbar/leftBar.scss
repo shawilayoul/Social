@@ -1,0 +1,64 @@
+.leftBar {
+    display: flex;
+    flex: 1;
+    position: sticky;
+    top: 57px;
+    height: calc(100vh - 57px);
+    overflow: scroll;
+
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .leftCard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+
+        .items1 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            justify-content: center;
+            border-bottom: 2px solid lightgray;
+            margin-top: 10px;
+
+            .personInfo {
+                display: flex;
+                align-items: center;
+
+                .link {
+                    text-decoration: none;
+                }
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+
+            .items {
+                display: flex;
+                align-items: center;
+
+                span {
+                    text-align: center;
+                    margin-left: 10px;
+                }
+
+                .shortcuts {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+    }
+}

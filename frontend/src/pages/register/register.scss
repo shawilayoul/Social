@@ -1,0 +1,93 @@
+.register {
+    background-color: gainsboro;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        display: flex;
+        background-color: rebeccapurple;
+        width: 50%;
+        height: 500px;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 500px;
+            padding: 20px;
+            background: url(https://media.istockphoto.com/id/1393947350/fr/photo/amis-joyeux-versant-le-champagne-sur-un-d%C3%AEner-la-nuit.jpg?s=612x612&w=0&k=20&c=DcJ76jzJT9g9BKcR5Tyu7uqjN8FJUPFJ2XxW4k_ZM8g=) center;
+            background-size: cover;
+
+            h1 {
+                color: white;
+            }
+
+            p {
+                font-size: large;
+                color: white;
+            }
+
+            span {
+                font-size: large;
+                margin-bottom: 10px;
+                color: white;
+            }
+
+            button {
+                width: 50%;
+                border: none;
+                padding: 8px;
+                color: white;
+                cursor: pointer;
+                border-radius: 6px;
+                background-color: rgba(19, 19, 223, 0.349);
+            }
+        }
+
+        .right {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: white;
+            height: 500px;
+
+            h1 {
+                color: black;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                input {
+                    padding: 8px;
+                    width: 50%;
+                    border: none;
+                    border-bottom: 1px solid lightblue;
+                }
+
+                button {
+                    margin-top: 5rem;
+                    border: none;
+                    padding: 8px;
+                    width: 50%;
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 6px;
+                    background-color: rgba(22, 22, 188, 0.349);
+                }
+            }
+        }
+    }
+}

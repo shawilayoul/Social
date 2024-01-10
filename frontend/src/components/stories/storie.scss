@@ -1,0 +1,29 @@
+.story {
+    display: flex;
+    gap: 10px;
+    height: 250px;
+    margin-bottom: 30px;
+    padding: 30px;
+
+    .storyCart {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            border-radius: 6px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        span {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-weight: 500;
+        }
+
+    }
+}

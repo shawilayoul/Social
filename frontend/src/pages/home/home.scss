@@ -1,0 +1,18 @@
+.home {
+    display: flex;
+    flex: 5;
+    background-color: rgba(220, 220, 220, 0.418);
+    top: 57px;
+    position: sticky;
+    overflow: scroll;
+    height: calc(100vh - 57px);
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .homeCard {
+        display: flex;
+        flex-direction: column;
+    }
+}

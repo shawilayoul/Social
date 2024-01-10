@@ -1,0 +1,97 @@
+.login {
+    height: 100vh;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        width: 50%;
+        background-color: aqua;
+        height: 400px;
+        overflow: hidden;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            flex: 1;
+            color: white;
+            padding: 10px;
+            height: 400px;
+            background: url(https://images.freeimages.com/variants/pTv77dUSf4hF1g7Z18o4SgGW/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d) center;
+            background-size: cover;
+
+
+            h1 {
+                font-weight: 100px;
+                font-size: large;
+            }
+
+            p {
+                color: rgb(255, 255, 255)
+            }
+
+            span {
+                color: white
+            }
+
+            button {
+                padding: 8px;
+                border-radius: 10px;
+                color: white;
+                background-color: blue;
+            }
+
+            button:hover {
+                color: blue;
+                background-color: white;
+            }
+        }
+
+        .right {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            height: 400px;
+
+            h1 {
+                font-weight: 100;
+                text-align: center;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid lightblue;
+                    padding: 8px;
+                    border-radius: 10px;
+                }
+
+                button {
+                    padding: 8px;
+                    border-radius: 10px;
+                    color: white;
+                    background-color: blue;
+                }
+
+                button:hover {
+                    color: blue;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
